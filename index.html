@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -114,14 +114,14 @@
           <div class="skills">
             <div class="skill-item">
               <span
-                ><span class="skill-label">Языки:</span>Python, C/C++, Java,
-                JavaScript, Go</span
+                ><span class="skill-label">Языки:</span>Python, C/C++,
+                JavaScript/TypeScript, Java</span
               >
             </div>
             <div class="skill-item">
               <span
                 ><span class="skill-label">Фреймворки и библиотеки:</span>
-                Django, pytest</span
+                Django, FastAPI, pytest</span
               >
             </div>
             <div class="skill-item">
@@ -132,32 +132,32 @@
             </div>
             <div class="skill-item">
               <span
-                ><span class="skill-label">Аналитика:</span> основы аналитики
-                данных, визуализация</span
+                ><span class="skill-label">Аналитика:</span> Статистический
+                анализ, проверка гипотез, регрессионое моделирование</span
               >
             </div>
             <div class="skill-item">
               <span
                 ><span class="skill-label">Базы данных:</span> SQL (PostgreSQL,
-                SQLite)</span
+                SQLite), NoSQL (HBase, redis)</span
               >
             </div>
             <div class="skill-item">
               <span
                 ><span class="skill-label">Инструменты:</span> Git, Docker,
-                CI/CD (GitHub Actions)</span
+                CI/CD (GitHub Actions, GitLab CI)</span
               >
             </div>
             <div class="skill-item">
               <span
-                ><span class="skill-label">Методологии:</span> Agile, Code
-                Review, Bug Reporting</span
+                ><span class="skill-label">Методологии:</span> Agile, Kanban,
+                Scrum</span
               >
             </div>
             <div class="skill-item">
               <span
-                ><span class="skill-label">Дополнительно:</span>
-                embedded-системы, работа с низкоуровневыми протоколами</span
+                ><span class="skill-label">Дополнительно:</span> LLM-интеграции,
+                embedded-системы, REST API</span
               >
             </div>
           </div>
@@ -168,22 +168,13 @@
           <h2>Обо мне</h2>
           <div class="about-content">
             <p>
-              Разработчик с опытом в backend-разработке веб-приложений, машинном
-              обучении, разработке игровых серверов и автоматизированном
-              тестировании. Ищу возможность применить свои навыки в реальных
-              проектах и расти в составе профессиональной команды.
+              Python-разработчик с фокусом на ML-интеграции и backend. Имею опыт
+              разработки AI-сервисов с использованием Stable Diffusion и LLM
+              (LLaMA), full stack веб-приложений на Django и FastAPI, а также
+              embedded-разработки для БПЛА (C++/Python, низкоуровневые
+              протоколы). Веду телеграмм-канал по алгоритмам и теории
+              программирования.
             </p>
-            <ul>
-              <li>
-                Вёл разработку ПО для обмена данными между БПЛА
-                (embedded-направление, C++/Python, работа с низкоуровневыми
-                протоколами).
-              </li>
-              <li>Имею базовый опыт в ML (обучение моделей, sklearn).</li>
-              <li>
-                Веду телеграм-канал по алгоритмам и теории программирования
-              </li>
-            </ul>
           </div>
         </section>
 
@@ -192,17 +183,16 @@
           <h2>Образование</h2>
           <div class="education-item">
             <strong
-              >Московский технический университет связи и информатики,
-              Москва</strong
+              >Московский технический университет связи и информатики
+              (МТУСИ)</strong
             >
-            <br />
-            Бакалавр, 3 курс, год окончания 2027
-            <br />
-            <strong>Специальность:</strong> Информатика и вычислительная техника
-            <br />
-            <br />
-            <strong>Профиль:</strong> Искусственный интеллект и машинное
-            обучение
+            <ul>
+              <li>Факультет - ИТ</li>
+              <li>Направление — Информатика и вычислительная техника</li>
+              <li>Профиль — Искусственный интеллект и машинное обучение</li>
+              <li>3 курс</li>
+              <li>Год окончания — 2027</li>
+            </ul>
           </div>
           <div class="education-item">
             <strong
@@ -210,7 +200,7 @@
                 href="https://education.yandex.ru/profile/docs?id=d5f0521b-2e6a-42cd-a537-d97faefe8867"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Интенсив Веб-разработка на Django от yandex</a
+                >Интенсив «Веб-разработка на Django» от yandex</a
               ></strong
             >
           </div>
@@ -220,7 +210,7 @@
                 href="https://education.yandex.ru/profile/docs?id=0153cd60-0db4-4c27-b3ef-1b2f5e8c6a55"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Интенсив Машинное обучение от yandex</a
+                >Интенсив «Машинное обучение» от yandex</a
               ></strong
             >
           </div>
@@ -229,13 +219,138 @@
         <!-- Проектный опыт -->
         <section class="section" id="projects">
           <h2>Проектный опыт</h2>
+          <!-- Проект 1:  Memology -->
+          <article class="project">
+            <div class="project-content">
+              <div class="project-header">
+                <span class="project-emoji">🧠</span>
+                <h3 class="project-title">Memology</h3>
+              </div>
+              <div class="project-meta">
+                <div class="project-meta-item">
+                  <span class="project-meta-label">Роль:</span>
+                  <span>ML Developer</span>
+                </div>
+                <div class="project-meta-item">
+                  <span class="project-meta-label">Стек:</span>
+                  <span>Python, Stable Diffusion WebUI, Ollama, Fast API</span>
+                </div>
+              </div>
+              <a
+                href="https://github.com/TAskMAster339/memology-ml"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub репозиторий</a
+              >
+              <ul>
+                <li>
+                  Разработал ML-сервис платформы генерации нейро-мемов:
+                  интеграция Stable Diffusion WebUI для создания изображений и
+                  Ollama для генерации смешных подписей.
+                </li>
+                <li>
+                  Реализовал пайплайн генерации: от текстового промпта до
+                  готового мема с подписью.
+                </li>
+                <li>
+                  Обеспечил взаимодействие ML-компонента с остальными частями
+                  системы через API.
+                </li>
+              </ul>
+              <div class="project-result">
+                <strong>Результат:</strong> Работающий сервис AI-генерации мемов
+                на базе open-source LLM и диффузионных моделей.
+              </div>
+              <button class="screenshot-toggle" aria-expanded="false">
+                Показать скриншоты
+              </button>
+            </div>
+            <div class="project-screenshots hidden">
+              <img
+                src="images/memology-1.png"
+                alt="Скриншот проекта Memology - 1"
+                loading="lazy"
+              />
+              <img
+                src="images/memology-2.png"
+                alt="Скриншот проекта Memology - 2"
+                loading="lazy"
+              />
+              <img
+                src="images/memology-3.png"
+                alt="Скриншот проекта Memology - 3"
+                loading="lazy"
+              />
+            </div>
+          </article>
 
-          <!-- Проект 1: Tic+Tac+Toe -->
+          <!-- Проект 2: AI Web Helper -->
+          <article class="project">
+            <div class="project-content">
+              <div class="project-header">
+                <span class="project-emoji">🤖</span>
+                <h3 class="project-title">AI Web Helper</h3>
+              </div>
+              <div class="project-meta">
+                <div class="project-meta-item">
+                  <span class="project-meta-label">Роль:</span>
+                  <span>Fullstack Developer</span>
+                </div>
+                <div class="project-meta-item">
+                  <span class="project-meta-label">Стек:</span>
+                  <span>Python, Django, TypeScript, React, Ollama</span>
+                </div>
+              </div>
+              <a
+                href="https://github.com/TAskMAster339/AI_web_helper"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub репозиторий</a
+              >
+              <ul>
+                <li>
+                  Разработал шаблонный веб-сайт со встроенным AI-ассистентом —
+                  готовое решение для быстрого старта AI-проектов.
+                </li>
+                <li>
+                  Интегрировал LLM в веб-интерфейс: настройка диалоговой логики,
+                  контекстного окна и стриминга ответов.
+                </li>
+                <li>
+                  Реализовал переиспользуемую архитектуру, удобную для
+                  кастомизации под разные домены и задачи.
+                </li>
+              </ul>
+              <div class="project-result">
+                <strong>Результат:</strong> Готовый шаблон AI-веб-приложения,
+                ускоряющий запуск новых проектов с интеграцией LLM ассистента.
+              </div>
+              <button class="screenshot-toggle" aria-expanded="false">
+                Показать скриншоты
+              </button>
+            </div>
+            <div class="project-screenshots hidden">
+              <img
+                src="images/ai-web-helper-1.png"
+                alt="Скриншот проекта AI Web Helper - 1"
+                loading="lazy"
+              />
+              <img
+                src="images/ai-web-helper-2.png"
+                alt="Скриншот проекта AI Web Helper - 2"
+                loading="lazy"
+              />
+            </div>
+          </article>
+
+          <!-- Проект 3: Tic++Tac+Toe -->
           <article class="project">
             <div class="project-content">
               <div class="project-header">
                 <span class="project-emoji">🎮</span>
-                <h3 class="project-title">Tic+Tac+Toe</h3>
+                <h3 class="project-title">Tic++Tac+Toe</h3>
               </div>
               <div class="project-meta">
                 <div class="project-meta-item">
@@ -244,7 +359,7 @@
                 </div>
                 <div class="project-meta-item">
                   <span class="project-meta-label">Стек:</span>
-                  <span>NodeJS, JavaScript, HTTP</span>
+                  <span>NodeJS, JavaScript</span>
                 </div>
               </div>
               <a
@@ -289,11 +404,10 @@
                 alt="Скриншот проекта Tic++Tac+Toe - 3"
                 loading="lazy"
               />
-              <!-- Добавьте больше скриншотов выше, удалив комментарии и заменив пути на реальные -->
             </div>
           </article>
 
-          <!-- Проект 2: Film It Easy -->
+          <!-- Проект 4: Film It Easy -->
           <article class="project">
             <div class="project-content">
               <div class="project-header">
@@ -347,17 +461,15 @@
                 alt="Скриншот проекта Film It Easy - 1"
                 loading="lazy"
               />
-              <!-- Добавьте больше скриншотов ниже -->
               <img
                 src="images/film-it-easy-2.png"
                 alt="Скриншот проекта Film It Easy - 2"
                 loading="lazy"
               />
-              <!-- <img src="images/film-it-easy-3.png" alt="Скриншот проекта Film It Easy - 3" loading="lazy" /> -->
             </div>
           </article>
 
-          <!-- Проект 3: ETL Addictions Graph -->
+          <!-- Проект 5: ETL Addictions Graph -->
           <article class="project">
             <div class="project-content">
               <div class="project-header">
@@ -404,19 +516,16 @@
                 alt="Скриншот проекта ETL Addictions Graph - 1"
                 loading="lazy"
               />
-              <!-- Добавьте больше скриншотов ниже -->
               <img
                 src="images/etl-graph-2.png"
                 alt="Скриншот проекта ETL Addictions Graph - 2"
                 loading="lazy"
               />
-              <!-- <img src="images/etl-graph-3.png" alt="Скриншот проекта ETL Addictions Graph - 3" loading="lazy" /> -->
             </div>
           </article>
         </section>
       </main>
     </div>
-
     <!-- Подключение JavaScript -->
     <script src="script.js"></script>
   </body>

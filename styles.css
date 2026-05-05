@@ -353,6 +353,7 @@ body::before {
 .skill-item {
     display: flex;
     align-items: flex-start;
+    min-height: 90px;
     padding: var(--spacing-sm);
     background: rgba(255, 255, 255, 0.03);
     border-radius: var(--radius-sm);
@@ -382,11 +383,9 @@ body::before {
     padding: var(--spacing-md);
     border-radius: var(--radius-md);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-left: 4px solid var(--primary-color);
 }
 
 .about-content p {
-    margin-bottom: var(--spacing-md);
     color: var(--text-secondary);
     line-height: 1.8;
 }
@@ -421,7 +420,6 @@ body::before {
     background: rgba(255, 255, 255, 0.03);
     border-radius: var(--radius-sm);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    margin-bottom: var(--spacing-sm);
     transition: all var(--transition-fast);
     position: relative;
     padding-left: calc(var(--spacing-md) * 2 + 8px);

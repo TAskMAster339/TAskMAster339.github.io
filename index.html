@@ -24,11 +24,16 @@
       property="og:description"
       content="Backend, ML/DL, Django/FastAPI, PyTorch, AI-интеграции и разработка сервисов."
     />
+    <meta
+      property="og:image"
+      content="https://taskmaster339.github.io/images/ai-web-helper-1.png"
+    />
+    <meta property="og:image:alt" content="Скриншот проекта AI Web Helper" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="ru_RU" />
     <meta property="og:site_name" content="Резюме Гришко Дмитрия" />
     <meta property="og:url" content="https://taskmaster339.github.io/" />
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
       content="Гришко Дмитрий Михайлович — Python-разработчик"
@@ -37,8 +42,13 @@
       name="twitter:description"
       content="Backend, ML/DL, Django/FastAPI, PyTorch, AI-интеграции и разработка сервисов."
     />
+    <meta
+      name="twitter:image"
+      content="https://taskmaster339.github.io/images/ai-web-helper-1.png"
+    />
 
     <title>Гришко Дмитрий Михайлович — Python-разработчик</title>
+    <link rel="canonical" href="https://taskmaster339.github.io/" />
 
     <!-- Подключение шрифта Inter из Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -62,7 +72,7 @@
       <!-- Header -->
       <header class="header">
         <h1>Гришко Дмитрий Михайлович</h1>
-        <div class="title">Python-разработчик | ML & Fullstack</div>
+        <div class="title">Python-разработчик | ML & Full-stack</div>
       </header>
 
       <!-- Main Content -->
@@ -70,7 +80,7 @@
         <!-- Контакты -->
         <section class="section" id="contacts">
           <h2>Контакты</h2>
-          <div class="contacts">
+          <address class="contacts">
             <div class="contact-item">
               <span
                 ><strong>Телефон:</strong>
@@ -119,7 +129,7 @@
                 ></span
               >
             </div>
-          </div>
+          </address>
         </section>
 
         <!-- Навыки -->
@@ -147,7 +157,7 @@
             <div class="skill-item">
               <span
                 ><span class="skill-label">Аналитика:</span> Статистический
-                анализ, проверка гипотез, регрессионое моделирование</span
+                анализ, проверка гипотез, регрессионное моделирование</span
               >
             </div>
             <div class="skill-item">
@@ -186,7 +196,7 @@
               разработки AI-сервисов с использованием Stable Diffusion и LLM
               (LLaMA), full stack веб-приложений на Django и FastAPI, а также
               embedded-разработки для БПЛА (C++/Python, низкоуровневые
-              протоколы). Веду телеграмм-канал по алгоритмам и теории
+              протоколы). Веду телеграм-канал по алгоритмам и теории
               программирования.
             </p>
           </div>
@@ -201,7 +211,7 @@
               (МТУСИ)</strong
             >
             <ul>
-              <li>Факультет - ИТ</li>
+              <li>Факультет — ИТ</li>
               <li>Направление — Информатика и вычислительная техника</li>
               <li>Профиль — Искусственный интеллект и машинное обучение</li>
               <li>3 курс</li>
@@ -214,7 +224,7 @@
                 href="https://education.yandex.ru/profile/docs?id=d5f0521b-2e6a-42cd-a537-d97faefe8867"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Интенсив «Веб-разработка на Django» от yandex</a
+                >Интенсив «Веб-разработка на Django» от Яндекс</a
               ></strong
             >
           </div>
@@ -224,7 +234,7 @@
                 href="https://education.yandex.ru/profile/docs?id=0153cd60-0db4-4c27-b3ef-1b2f5e8c6a55"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Интенсив «Машинное обучение» от yandex</a
+                >Интенсив «Машинное обучение» от Яндекс</a
               ></strong
             >
           </div>
@@ -247,7 +257,7 @@
                 </div>
                 <div class="project-meta-item">
                   <span class="project-meta-label">Стек:</span>
-                  <span>Python, Stable Diffusion WebUI, Ollama, Fast API</span>
+                  <span>Python, Stable Diffusion WebUI, Ollama, FastAPI</span>
                 </div>
               </div>
               <a
@@ -276,11 +286,16 @@
                 <strong>Результат:</strong> Работающий сервис AI-генерации мемов
                 на базе open-source LLM и диффузионных моделей.
               </div>
-              <button class="screenshot-toggle" aria-expanded="false">
+              <button
+                class="screenshot-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="screenshots-memology"
+              >
                 Показать скриншоты
               </button>
             </div>
-            <div class="project-screenshots hidden">
+            <div class="project-screenshots hidden" id="screenshots-memology">
               <img
                 src="images/memology-1.png"
                 alt="Скриншот проекта Memology - 1"
@@ -309,7 +324,7 @@
               <div class="project-meta">
                 <div class="project-meta-item">
                   <span class="project-meta-label">Роль:</span>
-                  <span>Fullstack Developer</span>
+                  <span>Full-stack Developer</span>
                 </div>
                 <div class="project-meta-item">
                   <span class="project-meta-label">Стек:</span>
@@ -341,11 +356,19 @@
                 <strong>Результат:</strong> Готовый шаблон AI-веб-приложения,
                 ускоряющий запуск новых проектов с интеграцией LLM ассистента.
               </div>
-              <button class="screenshot-toggle" aria-expanded="false">
+              <button
+                class="screenshot-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="screenshots-ai-web-helper"
+              >
                 Показать скриншоты
               </button>
             </div>
-            <div class="project-screenshots hidden">
+            <div
+              class="project-screenshots hidden"
+              id="screenshots-ai-web-helper"
+            >
               <img
                 src="images/ai-web-helper-1.png"
                 alt="Скриншот проекта AI Web Helper - 1"
@@ -387,7 +410,7 @@
                 <li>
                   Разработал серверную часть многопользовательской онлайн-игры с
                   поддержкой сессий, матчмейкинга и обмена данными в реальном
-                  времени через long polling поверх HTTP.
+                  времени через long-polling поверх HTTP.
                 </li>
                 <li>
                   Реализовал API взаимодействия игроков и логики игровых комнат.
@@ -398,11 +421,19 @@
                 <strong>Результат:</strong> Успешно протестировано до 20
                 одновременных игроков на сервере без потери производительности.
               </div>
-              <button class="screenshot-toggle" aria-expanded="false">
+              <button
+                class="screenshot-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="screenshots-tic-tac-toe"
+              >
                 Показать скриншоты
               </button>
             </div>
-            <div class="project-screenshots hidden">
+            <div
+              class="project-screenshots hidden"
+              id="screenshots-tic-tac-toe"
+            >
               <img
                 src="images/tic++tac+toe-1.png"
                 alt="Скриншот проекта Tic++Tac+Toe - 1"
@@ -465,11 +496,19 @@
                 <strong>Результат:</strong> Проект успешно защищён перед
                 заказчиком на демо; получил положительный отзыв и рекомендацию.
               </div>
-              <button class="screenshot-toggle" aria-expanded="false">
+              <button
+                class="screenshot-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="screenshots-film-it-easy"
+              >
                 Показать скриншоты
               </button>
             </div>
-            <div class="project-screenshots hidden">
+            <div
+              class="project-screenshots hidden"
+              id="screenshots-film-it-easy"
+            >
               <img
                 src="images/film-it-easy-1.png"
                 alt="Скриншот проекта Film It Easy - 1"
@@ -520,11 +559,16 @@
               <div class="project-result">
                 <strong>Результат:</strong> Покрытие кода тестами 85%.
               </div>
-              <button class="screenshot-toggle" aria-expanded="false">
+              <button
+                class="screenshot-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="screenshots-etl-graph"
+              >
                 Показать скриншоты
               </button>
             </div>
-            <div class="project-screenshots hidden">
+            <div class="project-screenshots hidden" id="screenshots-etl-graph">
               <img
                 src="images/etl-graph-1.png"
                 alt="Скриншот проекта ETL Addictions Graph - 1"

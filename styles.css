@@ -17,6 +17,8 @@
     --text-primary: #f1f5f9;
     --text-secondary: #cbd5e1;
     --text-muted: #94a3b8;
+    --link-color: #38bdf8;
+    --link-hover: #f472b6;
 
     /* Glassmorphism */
     --glass-bg: rgba(255, 255, 255, 0.05);
@@ -65,6 +67,16 @@ body {
     padding: var(--spacing-sm);
     position: relative;
     overflow-x: hidden;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--link-hover);
 }
 
 /* Анимация для фонового паттерна */
@@ -316,8 +328,7 @@ body::before {
 }
 
 .contact-item a {
-    color: var(--primary-light);
-    text-decoration: none;
+    color: var(--link-color);
     transition: color var(--transition-fast);
     position: relative;
 }
@@ -329,12 +340,12 @@ body::before {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--primary-light);
+    background: var(--link-color);
     transition: width var(--transition-normal);
 }
 
 .contact-item a:hover {
-    color: var(--accent-color);
+    color: var(--link-hover);
 }
 
 .contact-item a:hover::after {
@@ -420,6 +431,7 @@ body::before {
     background: rgba(255, 255, 255, 0.03);
     border-radius: var(--radius-sm);
     border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: var(--spacing-sm);
     transition: all var(--transition-fast);
     position: relative;
     padding-left: calc(var(--spacing-md) * 2 + 8px);
@@ -619,8 +631,7 @@ body::before {
     margin-bottom: var(--spacing-md);
     padding: 0.5rem 1rem;
     background: rgba(99, 102, 241, 0.1);
-    color: var(--primary-light);
-    text-decoration: none;
+    color: var(--link-color);
     border-radius: var(--radius-sm);
     border: 1px solid rgba(99, 102, 241, 0.2);
     font-size: 0.9rem;
@@ -773,6 +784,8 @@ body::before {
         --text-primary: #1e293b;
         --text-secondary: #475569;
         --text-muted: #64748b;
+        --link-color: #1d4ed8;
+        --link-hover: #be185d;
         --glass-bg: rgba(255, 255, 255, 0.7);
         --glass-border: rgba(0, 0, 0, 0.1);
     }
